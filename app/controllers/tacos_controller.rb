@@ -1,5 +1,7 @@
 class TacosController < ApplicationController
   def index
-    render :inline => "<h1>Tacos</h1>"
+    # html = "<h1>Tacos</h1><p>Let's eat delish tacos</p><ul></ul>"
+    # render :inline => html
+    render :template => "tacos/index"
   end
 end
